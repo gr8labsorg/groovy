@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="gr8labs.css"/>
+        <link rel="shortcut icon" href=""/>
+
+        <link rel="next" href=""/>
+        <link rel="previous" href=""/>
+        <link rel="up" href=""/>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="bigdecimal.html">Floating Point Numbers</a></li>
+            </ul>
+        </nav>
+
+        <article>
+
+        <header>
+        <hgroup>
+        <h1>Everything is a Object</h1>
+
+        <h2>Goal</h2>
+
+        <p>All types are objects in Groovy.</p>
+        </hgroup>
+        </header>
+
+        <p>
+        Because Groovy is so closely related to Java, we can use all Java types in Groovy.
+        So we don't experience any difference if we use a primitive type in our Groovy
+        code compared to Java.
+        But Groovy takes it a step further, because in Groovy everything is an object.
+        Primitive types are automatically boxed to their object counterparts.
+        And Groovy will automatically unbox the type if necessary.
+        </p>
+
+        <pre>
+// Define a variable of primitive type int.
+int number = 100
+
+// Class is java.lang.Integer.
+assert number.class.name == 'java.lang.Integer'
+
+// Other primitive types.
+double doubleValue = 1.2080
+boolean booleanValue = true
+char charValue = 'G'
+
+assert doubleValue.class.name == "java.lang.Double"
+assert booleanValue.class.name == "java.lang.Boolean"
+assert charValue.class.name == "java.lang.Character"
+        </pre>
+        </article>
+
+        <footer>
+            Copyright &copy; 2011 gr8labs.org
+        </footer>
+    </body>
+</html>

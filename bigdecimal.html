@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="gr8labs.css"/>
+        <link rel="shortcut icon" href=""/>
+
+        <link rel="next" href=""/>
+        <link rel="previous" href="everything_is_a_object.html"/>
+        <link rel="up" href=""/>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="everything_is_a_object.html">Everything is a Object</a></li>
+            </ul>
+        </nav>
+        <article>
+
+        <header>
+        <hgroup>
+        <h1>Floating Point Numbers</h1>
+
+        <h2>Goal</h2>
+
+        <p>Groovy uses BigDecimal as default floating point number.</p>
+        </hgroup>
+        </header>
+
+        <p>
+        In Groovy the default type for a numeric value with
+        a decimal point is java.math.BigDecimal, which is different from Java.
+        </p>
+
+        <pre>
+assert 42.0.class.name == "java.math.BigDecimal"
+assert 2.100000F + 0.10000F != 3.0
+assert 2.1 + 0.1 == 3.0
+
+assert 10G.class.name == "java.math.BigInteger"
+assert 10L.class.name == "java.lang.Long"
+assert 10I.class.name == "java.lang.Integer"
+assert 9.1D.class.name == "java.lang.Double"
+assert 9.1F.class.name == "java.lang.Float"
+assert 9.1G.class.name == "java.math.BigDecimal"
+        </pre>
+        </article>
+
+        <footer>
+            Copyright &copy; 2011 gr8labs.org
+        </footer>
+    </body>
+</html>
+
+
