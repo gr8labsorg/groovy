@@ -1,17 +1,17 @@
-pre { background-color: #fff; border: 1px solid #ccc; padding: 12px 24px; }
-pre.code {
+pre { background-color: #fff; border: 1px solid #ccc; padding: 12px 24px; margin: 20px 0; }
+pre {
     position: relative;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
-pre.code:before, pre.code:after {
+pre:before, pre:after {
 	position: absolute;
 	width: 40%;
 	height: 10px;
 	content: ' ';
 	left: 12px;
-	bottom: 12px;
+	bottom: 14px;
 	background: transparent;
 	-webkit-transform: skew(-5deg) rotate(-5deg);
 	-moz-transform: skew(-5deg) rotate(-5deg);
@@ -23,7 +23,7 @@ pre.code:before, pre.code:after {
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 	z-index: -1;
 }
-pre.code:after {
+pre:after {
 	left: auto;
 	right: 12px;
 	-webkit-transform: skew(5deg) rotate(5deg);
@@ -36,7 +36,7 @@ pre.code:after {
 section, footer { clear: both; }
 
 body { margin: 0; padding: 48px 0 72px 0; }
-body section, body footer { width: 712px; margin: 0px auto; }
+article, section, footer { width: 896px; margin: 0px auto; }
 body section { margin-top: 40px; }
 h3 { color: #808080; }
 footer { margin-top: 40px; }
@@ -72,6 +72,7 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	body { padding: 48px 28px 60px; }
+	article, section, footer { width: 712px; }
 }
 
 
@@ -88,7 +89,8 @@ px      68    160    252    */
 
 	body { padding: 12px 5px 60px; }
     pre { padding: 12px 6px; }
-    section, footer { width: 252px; }
+    article, section, footer { width: 252px; }
+    pre { font-size: 13px; line-height: 18px; overflow-y: auto; overflow-x: none; }
 }
 
 
@@ -102,10 +104,9 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
 	body { padding: 12px 22px 48px; }
-    pre { padding: 12px 24px; }
-    section, footer { width: 436px; }
+    pre { padding: 12px 6px; }
+    article, section, footer { width: 436px; }
 }
 
 
